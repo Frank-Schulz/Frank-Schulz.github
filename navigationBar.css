@@ -1,0 +1,38 @@
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    border: 1px solid var(--color-primary-0);
+    border-top: hidden;
+    background-color: var(--color-primary-4);
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 50px;
+    max-height: 50px;
+}
+
+nav ul li {
+    float: left;
+    border: 2px solid var(--color-primary-3);
+    border-top: hidden;
+    border-bottom: hidden;
+    border-left: hidden;
+}
+
+li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a.current {
+    background-color: var(--color-primary-3);
+}
+
+ul li .btn:hover:not(.current) {
+    background-color: var(--color-primary-3);
+}

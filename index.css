@@ -1,0 +1,125 @@
+/* Colour Variables */
+:root {
+    --color-background: #f0eff0;
+    --color-page: #fcfcfc;
+
+    --color-primary-0: #75AEC9;	/* Main Primary color */
+    --color-primary-1: #D7ECF7; 
+    --color-primary-2: #A5CFE3;
+    --color-primary-3: #4D8BA9;
+    --color-primary-4: #317191;
+
+    --color-complement-0: #FFCB8F;	/* Main Complement color */
+    --color-complement-1: #FFEFDD;
+    --color-complement-2: #FFDDB5;
+    --color-complement-3: #FFBB6D;
+    --color-complement-4: #E49B46;
+}
+
+body {
+    text-align: center;
+    background-color: var(--color-background);
+    font-family: helvetica;
+    overflow: scroll;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    width: 100%;
+}
+
+.page {
+    background-color: var(--color-page);
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 90%;
+    height: 100%;
+    box-shadow: 8px 0 8px 0 rgba(0, 0, 0, 0.2), -8px 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.profilePic {
+    margin-top: 60px;
+}
+
+.spacer {
+    margin-top: 30px;
+}
+
+.row {
+    width: 80%;
+    margin: auto;
+}
+
+.icon {
+    width: 15%;
+    max-height: 100px;
+    max-width: 100px;
+    padding: 20px 2%;
+}
+
+p {
+    font-size: 22px;
+    color: black;
+}
+
+.blurb {
+    text-align: left;
+    font-size: 18px;
+}
+
+.title {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+.cardList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 0;
+    height: 180px;
+    width: 180px;
+    margin: auto;
+    margin-bottom: 40px;
+    padding: 10px;
+    background-color: var(--color-page);
+    border-radius: 5px;
+    box-shadow: 8px 0 8px 0 rgba(0, 0, 0, 0.2), -8px 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardImg {
+    max-height: 120px;
+}
+
+
+@media screen and (max-width: 615px) {
+    .card {
+        height: 90px;
+        width: 90px;
+    }
+
+    .cardImg {
+        max-height: 60px;
+    }
+
+    .card > p {
+        font-size: 11px;
+    }
+}

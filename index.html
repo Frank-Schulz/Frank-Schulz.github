@@ -1,21 +1,89 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Frank Schulz</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+           $(document).ready(function(){
+              $('#header').load("navigationBar.html");
+              $('#footer').load("footer.html");
+           });
+        </script>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
         
-        <script src="index.js" async defer></script>
+    <!-- LOAD NAV BAR -->
+    <div id="header"></div>
+    
+    <!-- START MAIN BODY -->
+    <div class="page">
+        <!-- START ABOUT -->
+        <section id="about" class="section">
+
+        <img class="profilePic" src="assets/profilePic.png">
+        <h1>Hello, my name is Frank, <br>I'm an IT student at NMIT</h1>
+        
+        <div class="row">
+            <p class="blurb">I am in my first year of study into IT and
+            I have not yet decided which area of IT I want to focus on but I feel as though I lean more  
+            towards programming. I enjoy automation and am interested in Artificial Intelligence (AI) though  
+            I have yet to look into AI in greater detail.
+            </p> 
+        </div>
+
+        <div class="row">
+            <p class="header">What I am learning</p>
+            <img class="icon" src="assets/icons/javascriptIcon.png">
+            <img class="icon" src="assets/icons/htmlIcon.png">
+            <img class="icon" src="assets/icons/cssIcon.png">
+            <img class="icon" src="assets/icons/p5Icon.png">
+        </div>
+    </div>
+
+    <div class="page spacer">
+        <div class="projects">
+            <p class="title">Projects</p>
+
+            <p class="header">Previous Work</p>
+            <div class="cardList row">
+                <div class="card">
+                    <img class="cardImg" src="/assets/icons/javascriptIcon.png" alt="">
+                    <p>JavaScript Coding</p>
+                </div>
+                <div class="card">
+                    <img class="cardImg" src="/assets/icons/p5Icon.png" alt="">
+                    <p>P5.js Coding</p>
+                </div>
+                <div class="card">
+                    <img class="cardImg" src="/assets/icons/htmlIcon.png" alt="">
+                    <p>HTML Coding</p>
+                </div>
+            </div>
+
+            <p class="header">In Progress</p>
+            <div class="cardList row">
+                <div class="card">
+                    <img class="cardImg" src="/assets/icons/javascriptIcon.png" alt="">
+                    <p>JavaScript Coding</p>
+                </div>
+                <div class="card">
+                    <img class="cardImg" src="/assets/icons/cssIcon.png" alt="">
+                    <p>CSS Coding</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- END ABOUT -->
+        </div>
+        <!-- END MAIN BODY -->
+
+        <!-- LOAD FOOTER -->
+        <div id="footer"></div>
+
+        <script src="" async defer></script>
     </body>
 </html>
