@@ -17,6 +17,7 @@
 }
 
 body {
+    align-content: center;
     text-align: center;
     background-color: var(--color-background);
     font-family: helvetica;
@@ -32,16 +33,29 @@ div {
 .page {
     background-color: var(--color-page);
     margin: 0 auto;
-    padding: 20px;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0;
     width: 90%;
     height: 100%;
     box-shadow: 8px 0 8px 0 rgba(0, 0, 0, 0.2), -8px 0 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.profilePic {
-    margin-top: 60px;
+.page-contents{
+    width: auto;
+    margin: 0;
+    padding: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.profileImg {
+    height: 280px;
+    width: 280px;
+    object-fit: cover;
+    border: 8px;
+    border-style: solid;
+    border-color: var(--color-complement-3);
+    border-radius: 50%;
+    background-size: var(--color-complement-3);
 }
 
 .spacer {
@@ -49,7 +63,7 @@ div {
 }
 
 .row {
-    width: 80%;
+    width: 85%;
     margin: auto;
 }
 
@@ -71,12 +85,14 @@ p {
 }
 
 .title {
-    margin: 0;
+    margin: auto;
     padding: 0;
     font-size: 30px;
     font-weight: bold;
-    padding-top: 0;
-    padding-bottom: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: var(--color-complement-3);
+    box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 .header {
@@ -109,7 +125,28 @@ p {
 }
 
 
-@media screen and (max-width: 615px) {
+@media screen and (max-width: 600px) {
+    .profileImg {
+        height: 200px;
+        width: 200px;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .blurb {
+        font-size: 16px;
+    }
+
     .card {
         height: 90px;
         width: 90px;

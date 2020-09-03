@@ -87,4 +87,7 @@
     .footer-distributed .footer-left p.footer-links {
         line-height: 1.8;
     }
+    .footer-distributed {
+        padding: 25px 30px;
+    }
 }
