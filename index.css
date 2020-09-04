@@ -54,6 +54,7 @@ div {
     border: 8px;
     border-style: solid;
     border-color: var(--color-complement-3);
+    background-color: var(--color-complement-3);
     border-radius: 50%;
     background-size: var(--color-complement-3);
 }
@@ -72,6 +73,10 @@ div {
     max-height: 100px;
     max-width: 100px;
     padding: 20px 2%;
+}
+
+h1 {
+    font-size: 32px;
 }
 
 p {

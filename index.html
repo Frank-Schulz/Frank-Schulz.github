@@ -7,63 +7,55 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="index.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script>
-           $(document).ready(function(){
-              $('#header').load("navigationBar.html");
-              $('#footer').load("footer.html");
-           });
-        </script>
     </head>
     <body>
         
-    <!-- LOAD NAV BAR -->
-    <div id="header"></div>
-    
-    <!-- START MAIN BODY -->
-    <div class="page">
-        <!-- START ABOUT -->
-        <section id="about" class="section">
-
-        <div class="page-contents">
-            <img class="profileImg" src="assets/profileImg.jpg">
-            <h1>Hello, my name is Frank, <br>I'm an IT student at NMIT</h1>
+        <!-- LOAD NAV BAR -->
+        <div id="header"></div>
         
-            <div class="row">
-                <p class="blurb">I am in my first year of study into IT and
-                I have not yet decided which area of IT I want to focus on but I feel as though I lean more  
-                towards programming. I enjoy automation and am interested in Artificial Intelligence (AI) though  
-                I have yet to look into AI in greater detail.
-                </p> 
+        <!-- START MAIN BODY -->
+
+        <!-- START PAGE ONE - ABOUT -->
+        <div class="page">
+            <section id="about" class="section"></section>
+
+            <div class="page-contents">
+                <img class="profileImg" src="assets/profileImg.jpg">
+                <h1>Hello, my name is Frank, <br>I'm an IT student at NMIT</h1>
+            
+                <div class="row">
+                    <p class="blurb">I am in my first year of study into IT and
+                    I have not yet decided which area of IT I want to focus on but I feel as though I lean more  
+                    towards programming. I enjoy automation and am interested in Artificial Intelligence (AI) though  
+                    I have yet to look into AI in greater detail.
+                    </p> 
+                </div>
             </div>
-
-            <!-- <div class="row">
-                <p class="header">What I am learning</p>
-                <img class="icon" src="assets/icons/javascriptIcon.png">
-                <img class="icon" src="assets/icons/htmlIcon.png">
-                <img class="icon" src="assets/icons/cssIcon.png">
-                <img class="icon" src="assets/icons/p5Icon.png">
-            </div> -->
         </div>
-    </div>
+        <!-- END PAGE ONE - ABOUT -->
+        
+        <!-- START PAGE TWO -->
+        <div class="page spacer">
+            <p class="title">Projects</p>
+            <div class="page-contents">
+                <div class="projects">
 
-    <div class="page spacer">
-        <p class="title">Projects</p>
-        <div class="page-contents">
-            <div class="projects">
+                    <p class="header">Previous Work</p>
+                    <div class="cardList row">
+                        <div class="card">
+                            <img class="cardImg" src="/assets/icons/javascriptIcon.png" alt="">
+                            <p>JavaScript Coding</p>
+                        </div>
+                        <div class="card">
+                            <img class="cardImg" src="/assets/icons/p5Icon.png" alt="">
+                            <p>P5.js Coding</p>
+                        </div>
+                        <div class="card">
+                            <img class="cardImg" src="/assets/icons/htmlIcon.png" alt="">
+                            <p>HTML Coding</p>
+                        </div>
+                    </div>
 
-            <p class="header">Previous Work</p>
-            <div class="cardList row">
-                <div class="card">
-                    <img class="cardImg" src="/assets/icons/javascriptIcon.png" alt="">
-                    <p>JavaScript Coding</p>
-                </div>
-                <div class="card">
-                    <img class="cardImg" src="/assets/icons/p5Icon.png" alt="">
-                    <p>P5.js Coding</p>
-                </div>
-                <div class="card">
-                    <img class="cardImg" src="/assets/icons/htmlIcon.png" alt="">
-                    <p>HTML Coding</p>
                 </div>
             </div>
 
@@ -77,17 +69,24 @@
                     <img class="cardImg" src="/assets/icons/cssIcon.png" alt="">
                     <p>CSS Coding</p>
                 </div>
-                </div>
             </div>
+
         </div>
-        
-        <!-- END ABOUT -->
-    </div>
-    <!-- END MAIN BODY -->
+        <!-- END PAGE TWO -->
 
-    <!-- LOAD FOOTER -->
-    <div id="footer"></div>
+        <!-- END MAIN BODY -->
 
-        <script src="" async defer></script>
+        <!-- LOAD FOOTER -->
+        <div id="footer"></div>
+            
+        <script>
+            $(document  ).ready(function(){
+                $('#header').load("navigationBar.html");
+                $('#footer').load("footer.html");
+            });
+        </script>
+
+        <script src="index.js" async defer></script>
+
     </body>
 </html>
