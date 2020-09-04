@@ -5,6 +5,7 @@
     width: 100%;
     text-align: left;
     font: normal 16px sans-serif;
+    position: absolute;
     padding: 45px 50px;
     bottom: 0px;
     left: 0px;
