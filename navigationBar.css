@@ -1,5 +1,5 @@
-.nav {
-    margin-bottom: 50px;
+nav {
+    height: 50px;
 }
 
 .nav-list {
@@ -10,7 +10,7 @@
     box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
     background-color: var(--color-primary-4);
     position: fixed;
-    top: 0px;
+    /* top: 0px; */
     width: 100vw;
     height: 50px;
 }

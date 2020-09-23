@@ -1,56 +1,21 @@
-/* Colour Variables */
-:root {
-    --color-background: #f0eff0;
-    --color-page: #fcfcfc;
-
-    --color-primary-0: #75AEC9;	/* Main Primary color */
-    --color-primary-1: #D7ECF7; 
-    --color-primary-2: #A5CFE3;
-    --color-primary-3: #4D8BA9;
-    --color-primary-4: #317191;
-
-    --color-complement-0: #FFCB8F;	/* Main Complement color */
-    --color-complement-1: #FFEFDD;
-    --color-complement-2: #FFDDB5;
-    --color-complement-3: #FFBB6D;
-    --color-complement-4: #E49B46;
+body {
+    display: grid;
+    grid-template-rows: 50px auto auto 150px;
 }
 
-body {
-    align-content: center;
-    text-align: center;
-    background-color: var(--color-background);
-    font-family: helvetica;
-    overflow: scroll;
-    margin: 0;
-    padding: 0;
+::before, ::after {
+    box-sizing: border-box;
 }
 
 div {
     width: 100%;
 }
 
-.page {
-    background-color: var(--color-page);
-    margin: 0 auto;
-    padding: 0;
-    width: 90%;
-    height: 100%;
-    box-shadow: 8px 0 8px 0 rgba(0, 0, 0, 0.2), -8px 0 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.page-contents{
-    width: auto;
-    margin: 0;
-    padding: 20px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-}
-
 .profileImg {
     height: 280px;
     width: 280px;
     object-fit: cover;
+    margin-top: 10px;
     border: 8px;
     border-style: solid;
     border-color: var(--color-complement-3);
@@ -61,18 +26,6 @@ div {
 
 .spacer {
     margin-top: 30px;
-}
-
-.row {
-    width: 85%;
-    margin: auto;
-}
-
-.icon {
-    width: 15%;
-    max-height: 100px;
-    max-width: 100px;
-    padding: 20px 2%;
 }
 
 h1 {
@@ -88,47 +41,6 @@ p {
     text-align: left;
     font-size: 18px;
 }
-
-.title {
-    margin: auto;
-    padding: 0;
-    font-size: 30px;
-    font-weight: bold;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    background-color: var(--color-complement-3);
-    box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.2);
-}
-
-.header {
-    margin: 0;
-    padding: 0;
-    font-weight: 500;
-    padding-top: 0;
-    padding-bottom: 20px;
-}
-
-.cardList {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.card {
-    margin: 0;
-    height: 180px;
-    width: 180px;
-    margin: auto;
-    margin-bottom: 40px;
-    padding: 10px;
-    background-color: var(--color-page);
-    border-radius: 5px;
-    box-shadow: 8px 0 8px 0 rgba(0, 0, 0, 0.2), -8px 0 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.cardImg {
-    max-height: 120px;
-}
-
 
 @media screen and (max-width: 600px) {
     .profileImg {

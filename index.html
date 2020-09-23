@@ -5,7 +5,8 @@
         <title>Frank Schulz</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./index.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
     <body>
@@ -15,11 +16,10 @@
         
         <!-- START MAIN BODY -->
 
-        <!-- START PAGE ONE - ABOUT -->
-        <div class="page">
-            <section id="about" class="section"></section>
+        <!-- START SECTION ONE - ABOUT -->
+        <div class="section first">
 
-            <div class="page-contents">
+            <div class="section-contents">
                 <img class="profileImg" src="assets/profileImg.jpg">
                 <h1>Hello, my name is Frank, <br>I'm an IT student at NMIT</h1>
             
@@ -32,12 +32,12 @@
                 </div>
             </div>
         </div>
-        <!-- END PAGE ONE - ABOUT -->
+        <!-- END SECTION ONE - ABOUT -->
         
-        <!-- START PAGE TWO -->
-        <div class="page spacer">
+        <!-- START SECTION TWO -->
+        <div class="section spacer">
             <p class="title">Projects</p>
-            <div class="page-contents">
+            <div class="section-contents">
                 <div class="projects">
 
                     <p class="header">Previous Work</p>
@@ -72,13 +72,13 @@
             </div>
 
         </div>
-        <!-- END PAGE TWO -->
+        <!-- END SECTION TWO -->
 
         <!-- END MAIN BODY -->
 
         <!-- LOAD FOOTER -->
         <div id="footer"></div>
-            
+        
         <script>
             $(document  ).ready(function(){
                 $('#header').load("navigationBar.html");
