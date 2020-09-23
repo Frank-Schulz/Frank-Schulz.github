@@ -15,7 +15,6 @@ div {
     height: 280px;
     width: 280px;
     object-fit: cover;
-    margin-top: 10px;
     border: 8px;
     border-style: solid;
     border-color: var(--color-complement-3);

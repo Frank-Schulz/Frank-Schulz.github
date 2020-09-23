@@ -36,6 +36,10 @@ body {
     box-shadow: 8px 0 8px 0 rgba(0, 0, 0, 0.2), -8px 0 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+.section-contents {
+    padding: 20px 0 10px;
+}
+
 .row {
     width: 85%;
     margin: auto;
